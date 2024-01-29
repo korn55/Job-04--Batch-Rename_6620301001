@@ -15,3 +15,4 @@ os.rename(file_name, new_name)
     print(f"Renamed {file_name} to {new_name}")
 
 directory_path = "."  
+file_extension = ".jpg"
