@@ -14,4 +14,4 @@ new_name = f"{index:03d}{file_extension}"
 os.rename(file_name, new_name)     
     print(f"Renamed {file_name} to {new_name}")
 
-directory_path = "."  # Change this to the desired directory path
+directory_path = "."  
