@@ -16,3 +16,4 @@ os.rename(file_name, new_name)
 
 directory_path = "."  
 file_extension = ".jpg"
+rename_files(directory_path, file_extension)
