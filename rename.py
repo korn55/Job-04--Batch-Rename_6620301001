@@ -6,7 +6,7 @@ def rename_files(directory_path, file_extension):
         print(f"Directory '{directory}' ไม่พบ")
         return
 
-files_to_rename = [file for file in os.listdir() if file.endswith(file_extension)]
+files = [file for file in os.listdir(directory) if file.endswith(file_extension)]
 
 
 files_to_rename.sort()
