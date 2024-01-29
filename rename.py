@@ -11,4 +11,5 @@ files_to_rename.sort()
 
 for index, file_name in enumerate(files_to_rename, start=1):
 new_name = f"{index:03d}{file_extension}"
-os.rename(file_name, new_name)       
+os.rename(file_name, new_name)     
+    print(f"Renamed {file_name} to {new_name}")
