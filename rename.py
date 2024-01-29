@@ -12,18 +12,20 @@ def rename_files(directory, file_extension):
 # Sort files by name
     files.sort()
 
-
+    # Rename files in numerical order
     for i, file in enumerate(files, start=1):
-
+        # Create a new file name
         new_name = f"{i:03d}{file_extension}"
-
+        
+        # Create the full file path
         old_path = os.path.join(directory, file)
-    ew_path = os.path.join(directory, new_name)
+        ew_path = os.path.join(directory, new_name)
 
-    os.rename(old_path, new_path)
-    print(f"Rename: {file} = {new_name}")
+        # rename file
+        os.rename(old_path, new_path)
+        print(f"Rename: {file} = {new_name}")
 
-
+# Call the function
 directory_path = "D:/Job-04--Batch-Rename_6620301001"  
 file_extension_to_rename = ".jpg"
 rename_files(directory_path, file_extension_to_rename)
